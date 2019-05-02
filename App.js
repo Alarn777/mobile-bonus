@@ -9,12 +9,18 @@
 import React from 'react'
 import { createStackNavigator, createAppContainer } from 'react-navigation'
 import HomeScreen from './screens/MainScreen'
+import Accelerometer from './screens/Accelerometer'
 import Gyroscope from './screens/Gyroscope'
+import GeoLocation from './screens/GeoLocation'
+import Gestures from './screens/Gestures'
 
 const AppNavigator = createStackNavigator(
   {
     Home: HomeScreen,
-    Gyroscope
+    Gyroscope: Gyroscope,
+    Accelerometer: Accelerometer,
+    GeoLocation: GeoLocation,
+    Gestures : Gestures,
   },
   {
     initialRouteName: 'Home'

@@ -10,11 +10,15 @@ const instructions = Platform.select({
 
 type Props = {};
 export default class MainScreen extends Component<Props> {
+
     render() {
         return (
             <View style={styles.container}>
-                <Text style={styles.welcome}>Welcome to React Native!</Text>
+                <Text style={styles.welcome}>Welcome to Native!</Text>
                  <Button style={styles.button} title='Gyroscope' onPress={()=>this.props.navigation.navigate('Gyroscope')}/>
+                <Button style={styles.button} title='Accelerometer' onPress={()=>this.props.navigation.navigate('Accelerometer')}/>
+                <Button style={styles.button} title='GeoLocation' onPress={()=>this.props.navigation.navigate('GeoLocation')}/>
+                <Button style={styles.button} title='Gestures' onPress={()=>this.props.navigation.navigate('Gestures')}/>
 
             </View>
         );
