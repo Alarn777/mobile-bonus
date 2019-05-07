@@ -20,14 +20,13 @@ import Drag from './screens/Drag'
 const AppNavigator = createStackNavigator(
   {
     Home: HomeScreen,
-    Gyroscope: Gyroscope,
-    Accelerometer: Accelerometer,
-    GeoLocation: GeoLocation,
-    Gestures : Gestures,
-    Swipe : Swipe,
-    Press : Press,
-    Drag : Drag
-
+    Gyroscope,
+    Accelerometer,
+    GeoLocation,
+    Gestures,
+    Swipe,
+    Press,
+    Drag
   },
   {
     initialRouteName: 'Home'
