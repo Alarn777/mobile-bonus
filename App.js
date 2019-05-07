@@ -13,6 +13,9 @@ import Accelerometer from './screens/Accelerometer'
 import Gyroscope from './screens/Gyroscope'
 import GeoLocation from './screens/GeoLocation'
 import Gestures from './screens/Gestures'
+import Swipe from './screens/Swipe'
+import Press from './screens/Press'
+import Drag from './screens/Drag'
 
 const AppNavigator = createStackNavigator(
   {
@@ -21,6 +24,10 @@ const AppNavigator = createStackNavigator(
     Accelerometer: Accelerometer,
     GeoLocation: GeoLocation,
     Gestures : Gestures,
+    Swipe : Swipe,
+    Press : Press,
+    Drag : Drag
+
   },
   {
     initialRouteName: 'Home'
